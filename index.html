@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore ancient wisdom and future visions in The Timeless Chronicles">
+  <title>The Timeless Chronicles | Gateway to Forgotten Knowledge</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loading-screen">
+    <div class="loading-text">Opening The Timeless Chronicles</div>
+    <div class="book-loader">
+      <div class="book-page"></div>
+    </div>
+  </div>
+
+  <!-- Cosmic Particle Canvas -->
+  <canvas id="cosmic-particles"></canvas>
+  
+  <!-- Custom Cursor Elements -->
+  <div class="custom-cursor"></div>
+  <div class="cursor-trail"></div>
+
+  <!-- Centered Quote with Enhanced Typing Animation -->
+  <div class="quote">
+    <h1 id="typing-text"></h1>
+    <div class="scroll-hint">
+      <span class="scroll-arrow">↓</span>
+      <span class="scroll-text">Enter the Archives</span>
+    </div>
+  </div>
+
+  <!-- Navigation Doors with Particle Effects -->
+  <div class="doors-container">
+    <div class="doors">
+      <a href="eternal-library.html" class="door" data-audio="waters.mp3">
+        <span class="door-text">Eternal Library</span>
+        <span class="door-glow"></span>
+        <span class="door-particles"></span>
+      </a>
+      <a href="whispers.html" class="door" data-audio="waters.mp3">
+        <span class="door-text">Whispers of the Past</span>
+        <span class="door-glow"></span>
+        <span class="door-particles"></span>
+      </a>
+      <a href="futurist.html" class="door" data-audio="waters.mp3">
+        <span class="door-text">Futurist's Diaries</span>
+        <span class="door-glow"></span>
+        <span class="door-particles"></span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Enhanced Audio Player with Visualizer -->
+  <div class="audio-player">
+    <audio id="bg-music" loop>
+      <source src="waters.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+    <button id="music-toggle" aria-label="Toggle music">
+      <span class="music-icon">♪</span>
+      <span class="visualizer"></span>
+      <span class="music-wave"></span>
+    </button>
+  </div>
+
+  <!-- Footer with Copyright -->
+  <footer class="site-footer">
+    <p>The Timeless Chronicles &copy; <span id="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="particles.js"></script>
+  <script src="library.js"></script>
+</body>
+</html>

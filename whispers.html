@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whispers of the Past | The Timeless Chronicles</title>
+  <meta name="theme-color" content="#0a0e17">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Critical CSS */
+    body { 
+      margin: 0;
+      background: #0a0e17;
+      color: #f0e6d2;
+      font-family: 'Old Standard TT', serif;
+      overflow-x: hidden;
+      transition: 1.5s ease;
+    }
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #0a0e17;
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .preloader-text {
+      font-family: 'Cinzel Decorative', serif;
+      color: #c9b037;
+      font-size: 1.5rem;
+      margin-top: 20px;
+      text-shadow: 0 0 10px rgba(201, 176, 55, 0.5);
+    }
+    #ink-canvas { 
+      position: fixed; 
+      top: 0; 
+      left: 0; 
+      z-index: -1;
+      mix-blend-mode: soft-light;
+    }
+  </style>
+  <link rel="stylesheet" href="whispers.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="spinner">
+      <div class="gold-dust"></div>
+      
+    </div>
+    <div class="preloader-text">Unveiling Forgotten Masterpieces...</div>
+  </div>
+
+  <!-- Canvas for dynamic effects -->
+  <canvas id="ink-canvas"></canvas>
+
+  <!-- Ambient Light -->
+  <div class="ambient-light"></div>
+
+  <!-- Content Container -->
+  <main id="whispers-content" class="hidden">
+    <!-- Animated Header -->
+    <div class="parallax-wrapper">
+      <header class="whispers-header">
+        <div class="title-wrapper">
+          <h1 id="whispers-title">
+            <span class="title-char">W</span>
+            <span class="title-char">h</span>
+            <span class="title-char">i</span>
+            <span class="title-char">s</span>
+            <span class="title-char">p</span>
+            <span class="title-char">e</span>
+            <span class="title-char">r</span>
+            <span class="title-char">s</span>
+            <span>&nbsp;</span>
+            <span class="title-char">o</span>
+            <span class="title-char">f</span>
+            <span>&nbsp;</span>
+            <span class="title-char">t</span>
+            <span class="title-char">h</span>
+            <span class="title-char">e</span>
+            <span>&nbsp;</span>
+            <span class="title-char">P</span>
+            <span class="title-char">a</span>
+            <span class="title-char">s</span>
+            <span class="title-char">t</span>
+          </h1>
+          <div class="title-underline"></div>
+        </div>
+        <p class="subtitle">Where lost artistry finds its voice again</p>
+      </header>
+    </div>
+
+    <!-- Interactive Gallery -->
+    <section class="art-gallery">
+      <!-- Art pieces will be loaded dynamically -->
+    </section>
+
+    <!-- Navigation -->
+    <nav class="gallery-nav">
+      <button class="nav-button" id="prev-btn"><i class="fas fa-chevron-left"></i></button>
+      <div class="gallery-counter">
+        <span id="current-art">1</span>/<span id="total-arts">3</span>
+        <div class="gallery-progress"></div>
+      </div>
+      <button class="nav-button" id="next-btn"><i class="fas fa-chevron-right"></i></button>
+    </nav>
+
+    <!-- Back Button -->
+    <a href="index.html" class="back-button" data-tooltip="Return to Main Gallery">
+      <i class="fas fa-arrow-left"></i> Return to Chronicles
+    </a>
+  </main>
+
+  <!-- Audio Player -->
+  <div class="audio-container">
+    <div class="track-info">
+      <div class="track-title">Classical Ambience</div>
+      <div class="track-time">0:00 / 3:42</div>
+    </div>
+    <audio id="bg-music" loop>
+      <source src="audio/can dance.mp3" type="audio/mp3">
+    </audio>
+    <button id="music-toggle" aria-label="Toggle music">
+      <i class="fas fa-music"></i>
+      <div class="music-wave"></div>
+    </button>
+    <div id="music-visualizer"></div>
+  </div>
+
+  <!-- Art Info Modal -->
+  <div class="art-modal">
+    <button class="modal-nav prev-art"><i class="fas fa-chevron-left"></i></button>
+    <div class="modal-content">
+      <button class="close-modal">&times;</button>
+      <div class="modal-body">
+        <div class="modal-image-container">
+          <img src="" alt="" class="modal-image">
+          <div class="image-credits"></div>
+        </div>
+        <div class="modal-text">
+          <h2 class="modal-title"></h2>
+          <p class="modal-artist"></p>
+          <p class="modal-year"></p>
+          <p class="modal-quote"></p>
+          <p class="modal-description"></p>
+          <div class="historical-context"></div>
+        </div>
+      </div>
+    </div>
+    <button class="modal-nav next-art"><i class="fas fa-chevron-right"></i></button>
+  </div>
+
+  <!-- Cursor Effects -->
+  <div class="custom-cursor"></div>
+  <div class="cursor-trail"></div>
+
+  <!-- JavaScript -->
+  <script src="whispers.js"></script>
+</body>
+</html>

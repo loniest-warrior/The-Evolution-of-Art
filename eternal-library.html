@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eternal Library | The Timeless Chronicles</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loading-screen">
+    <div class="loading-text">Entering the Eternal Library...</div>
+    <div class="book-loader">
+      <div class="book-page"></div>
+      <div class="book-page"></div>
+      <div class="book-page"></div>
+      <div class="book-page"></div>
+      <div class="book-page"></div>
+    </div>
+  </div>
+
+  <!-- Starfield Background -->
+  <div class="starfield" id="starfield"></div>
+
+  <!-- Library Header -->
+  <header class="library-header">
+    <h1>Eternal Library</h1>
+    <p class="library-subtitle">Where past and future knowledge converge</p>
+  </header>
+
+  <!-- Search Bar -->
+  <div class="search-container">
+    <input type="text" id="book-search" placeholder="Search the infinite tomes...">
+  </div>
+
+  <!-- Book Grid -->
+  <div class="book-grid">
+    <!-- Ancient Knowledge Books -->
+    <div class="book" data-title="The Lost City" data-category="ancient">
+      <div class="book-inner">
+        <div class="book-front">
+          <h3 class="book-title">The Lost City</h3>
+          <p class="book-author">By John Doe</p>
+          <p class="book-description">A thrilling journey through forgotten civilizations where ancient secrets lie buried beneath the sands of time.</p>
+          <span class="book-category ancient">Ancient</span>
+        </div>
+        <div class="book-spine"></div>
+        <div class="book-back"></div>
+      </div>
+    </div>
+
+    <div class="book" data-title="Whispers of the Past" data-category="ancient">
+      <div class="book-inner">
+        <div class="book-front">
+          <h3 class="book-title">Whispers of the Past</h3>
+          <p class="book-author">By Jane Smith</p>
+          <p class="book-description">Dive into the tales of ancient wisdom and knowledge that have shaped civilizations across millennia.</p>
+          <span class="book-category ancient">Ancient</span>
+        </div>
+        <div class="book-spine"></div>
+        <div class="book-back"></div>
+      </div>
+    </div>
+
+    <div class="book" data-title="The Atlantean Codex" data-category="ancient">
+      <div class="book-inner">
+        <div class="book-front">
+          <h3 class="book-title">The Atlantean Codex</h3>
+          <p class="book-author">By Robert Lang</p>
+          <p class="book-description">Deciphering the lost technology of Atlantis through fragments recovered from the ocean depths.</p>
+          <span class="book-category ancient">Ancient</span>
+        </div>
+        <div class="book-spine"></div>
+        <div class="book-back"></div>
+      </div>
+    </div>
+
+    <!-- Future Visions Books -->
+    <div class="book" data-title="Future Echoes" data-category="future">
+      <div class="book-inner">
+        <div class="book-front">
+          <h3 class="book-title">Future Echoes</h3>
+          <p class="book-author">By Emily Green</p>
+          <p class="book-description">A speculative journey into the possibilities of the future and the many paths humanity might take.</p>
+          <span class="book-category future">Future</span>
+        </div>
+        <div class="book-spine"></div>
+        <div class="book-back"></div>
+      </div>
+    </div>
+
+    <div class="book" data-title="Quantum Horizons" data-category="future">
+      <div class="book-inner">
+        <div class="book-front">
+          <h3 class="book-title">Quantum Horizons</h3>
+          <p class="book-author">By Dr. Alan Quantum</p>
+          <p class="book-description">Exploring the multiverse theory through the lens of quantum physics and ancient prophecies.</p>
+          <span class="book-category future">Future</span>
+        </div>
+        <div class="book-spine"></div>
+        <div class="book-back"></div>
+      </div>
+    </div>
+
+    <div class="book" data-title="Neo-Civilization" data-category="future">
+      <div class="book-inner">
+        <div class="book-front">
+          <h3 class="book-title">Neo-Civilization</h3>
+          <p class="book-author">By Mia Zhang</p>
+          <p class="book-description">How future societies might rebuild after collapse, drawing from historical cycles of rise and fall.</p>
+          <span class="book-category future">Future</span>
+        </div>
+        <div class="book-spine"></div>
+        <div class="book-back"></div>
+      </div>
+    </div>
+
+    <!-- Mystical Tomes -->
+    <div class="book" data-title="The Alchemist's Diary" data-category="ancient">
+      <div class="book-inner">
+        <div class="book-front">
+          <h3 class="book-title">The Alchemist's Diary</h3>
+          <p class="book-author">Attributed to Hermes</p>
+          <p class="book-description">Lost formulas for transformation and transcendence from the legendary Hermes Trismegistus.</p>
+          <span class="book-category ancient">Mystical</span>
+        </div>
+        <div class="book-spine"></div>
+        <div class="book-back"></div>
+      </div>
+    </div>
+
+    <div class="book" data-title="Celestial Harmonies" data-category="ancient">
+      <div class="book-inner">
+        <div class="book-front">
+          <h3 class="book-title">Celestial Harmonies</h3>
+          <p class="book-author">By Johannes Kepler</p>
+          <p class="book-description">The musical structure of the cosmos as revealed through planetary motion and sacred geometry.</p>
+          <span class="book-category ancient">Mystical</span>
+        </div>
+        <div class="book-spine"></div>
+        <div class="book-back"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Book Modal -->
+  <div class="modal" id="book-modal">
+    <div class="modal-content">
+      <button class="close-modal">&times;</button>
+      <h2 id="modal-title">Book Title</h2>
+      <p class="book-meta" id="modal-author">By Author</p>
+      <div class="book-full-content" id="modal-content">
+        <!-- Content will be inserted here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Music Player -->
+  <button id="music-toggle">♪</button>
+
+  <!-- Back to Home Button -->
+  <a href="index.html" class="back-home">← Return to Chronicles</a>
+
+  <script src="library.js"></script>
+</body>
+</html>

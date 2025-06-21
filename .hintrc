@@ -1,0 +1,32 @@
+{
+  "extends": [
+    "development"
+  ],
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not ios_saf <= 18.4",
+    "not safari <= 18.4",
+    "not chrome <= 109",
+    "not samsung <= 27",
+    "not and_ff <= 137",
+    "not firefox <= 137",
+    "not opera <= 117"
+  ],
+  "hints": {
+    "axe/name-role-value": [
+      "default",
+      {
+        "button-name": "off"
+      }
+    ],
+    "axe/forms": [
+      "default",
+      {
+        "label": "off"
+      }
+    ],
+    "detect-css-reflows/composite": "off",
+    "detect-css-reflows/paint": "off"
+  }
+}

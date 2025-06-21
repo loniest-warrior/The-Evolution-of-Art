@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Futurist's Diaries | The Evolution of Art</title>
+  <link rel="stylesheet" href="futurist.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loading-screen">
+    <div class="loading-text">Initializing Futurist Archives...</div>
+  </div>
+
+  <!-- Header -->
+  <header class="futurist-header">
+    <h1>Futurist's Diaries</h1>
+    <p class="subtitle">Chronicles of Artistic Evolution</p>
+    <div class="divider"></div>
+  </header>
+
+  <!-- Timeline Navigation -->
+  <div class="timeline-nav">
+    <button class="era-btn active" data-era="2025">2025-2030</button>
+    <button class="era-btn" data-era="2035">2035-2040</button>
+    <button class="era-btn" data-era="2045">2045+</button>
+  </div>
+
+  <!-- Main Content Grid -->
+  <main class="futurist-grid">
+    <!-- 2025-2030 Era -->
+    <article class="futurist-card" data-era="2025">
+      <div class="card-hologram">
+        <img src="neuron futurist.jpg" alt="Neural Network Art" class="hologram-img">
+        <div class="hologram-effect"></div>
+      </div>
+      <div class="card-content">
+        <h3>Neural Aesthetics</h3>
+        <p class="date">2026</p>
+        <p class="description">Art generated directly from brainwave patterns using neural interfaces, creating truly mind-expanding visual experiences.</p>
+        <button class="explore-btn">Explore</button>
+      </div>
+    </article>
+
+    <article class="futurist-card" data-era="2025">
+      <div class="card-hologram">
+        <img src="quantum futurist.jpg" alt="Quantum Art" class="hologram-img">
+        <div class="hologram-effect"></div>
+      </div>
+      <div class="card-content">
+        <h3>Quantum Expressionism</h3>
+        <p class="date">2028</p>
+        <p class="description">Artworks that exist in superposition, changing based on observer interaction and quantum states.</p>
+        <button class="explore-btn">Explore</button>
+      </div>
+    </article>
+
+    <!-- 2035-2040 Era -->
+    <article class="futurist-card" data-era="2035">
+      <div class="card-hologram">
+        <img src="holographic futurist.jpg" alt="Holographic Art" class="hologram-img">
+        <div class="hologram-effect"></div>
+      </div>
+      <div class="card-content">
+        <h3>Holographic Impressionism</h3>
+        <p class="date">2036</p>
+        <p class="description">Three-dimensional light sculptures that evolve over time, creating immersive environmental experiences.</p>
+        <button class="explore-btn">Explore</button>
+      </div>
+    </article>
+
+    <article class="futurist-card" data-era="2035">
+      <div class="card-hologram">
+        <img src="ai futurist.avif" alt="AI Art" class="hologram-img">
+        <div class="hologram-effect"></div>
+      </div>
+      <div class="card-content">
+        <h3>AI Symbiosis</h3>
+        <p class="date">2039</p>
+        <p class="description">Collaborative artworks created through direct neural interface between human artists and AI consciousness.</p>
+        <button class="explore-btn">Explore</button>
+      </div>
+    </article>
+
+    <!-- 2045+ Era -->
+    <article class="futurist-card" data-era="2045">
+      <div class="card-hologram">
+        <img src="nanotech futurist.jpeg" alt="Nanotech Art" class="hologram-img">
+        <div class="hologram-effect"></div>
+      </div>
+      <div class="card-content">
+        <h3>Nanotech Canvas</h3>
+        <p class="date">2046</p>
+        <p class="description">Living artworks composed of programmable matter that can reshape itself based on environmental inputs.</p>
+        <button class="explore-btn">Explore</button>
+      </div>
+    </article>
+
+    <article class="futurist-card" data-era="2045">
+      <div class="card-hologram">
+        <img src="metaverse futurist.webp" alt="Metaverse Art" class="hologram-img">
+        <div class="hologram-effect"></div>
+      </div>
+      <div class="card-content">
+        <h3>Metaverse Realism</h3>
+        <p class="date">2048</p>
+        <p class="description">Art that exists simultaneously across multiple dimensions of the metaverse, adapting to each viewer's perception.</p>
+        <button class="explore-btn">Explore</button>
+      </div>
+    </article>
+  </main>
+
+  <!-- Terminal -->
+  <div class="cyber-terminal">
+    <div class="terminal-header">
+      FUTURIST ARCHIVES TERMINAL
+    </div>
+    <div class="terminal-body">
+      <p>> Loading future art database...</p>
+      <p>> Select an era to begin exploration</p>
+    </div>
+  </div>
+
+  <!-- Music Player -->
+  <div class="audio-player">
+    <audio id="bg-music" loop crossorigin="anonymous">
+      <source src="time-166273.mp3" type="audio/mp3">
+    </audio>
+    <button id="music-toggle" aria-label="Toggle music">
+      <span class="music-icon">♪</span>
+      <span class="visualizer"></span>
+      <span class="music-wave"></span>
+    </button>
+  </div>
+
+  <!-- Back to Archives Button -->
+<a href="index.html" class="back-home">
+  Return to Archives
+</a>
+
+  <script src="music-player.js"></script>
+  <script src="futurist.js"></script>
+</body>
+</html>
